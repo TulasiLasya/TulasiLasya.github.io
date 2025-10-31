@@ -1,0 +1,120 @@
+/* Base Style */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e0f7fa);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 0.1rem 0.1rem 0.1rem;
+  background: linear-gradient(135deg, #c2e9fb, #e7e9f0);
+  border-bottom: 2px solid #d9e4f5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #67d3fa, #85b0f7);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #5f6f81;
+  font-style: italic;
+}
+
+
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 2rem auto 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Card Styling */
+.subject {
+  background: #ffffffb3;
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(180, 200, 255, 0.2);
+  padding: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.subject:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(150, 180, 255, 0.3);
+}
+
+/* Subject Title */
+.subject h2 {
+  font-size: 1.2rem;
+  background: linear-gradient(90deg, #5adad3, #f1b2c6);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+.subject p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Credits Tag */
+.credits {
+  display: inline-block;
+  background: #d9fdd3;
+  color: #3b755f;
+  padding: 0.35rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 0.7rem;
+  transition: background 0.3s ease;
+}
+
+.credits:hover {
+  background: #bbf3b4;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: linear-gradient(135deg, #e7f0fd, #fce1f5);
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 2px solid #d9e4f5;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 2;
+    transform: translateY(0);
+  }
+}
