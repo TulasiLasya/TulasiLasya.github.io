@@ -118,3 +118,27 @@ footer {
     transform: translateY(0);
   }
 }
+
+/* Final Note Section */
+.note-section {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 900px;
+}
+
+.final-note {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+  font-weight: 500;
+  background: linear-gradient(90deg, #161616, #1b1c1d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
